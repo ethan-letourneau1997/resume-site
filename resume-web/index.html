@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#182135",
+              light: "#f4f3f4",
+              gray: "#3d3d3d",
+              bar: "#bbbbba",
+            },
+            fontFamily: {
+              lato: ["lato"],
+              open: ["'Open Sans'"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="w-screen grid-cols-12 text-dark hidden md:grid">
+      <div class="col-span-12 md:col-span-4 bg-light pb-10">
+        <div class="h-[252px] flex">
+          <img
+            class="rounded-full border-[20px] border-white w-[200px] mx-auto my-auto"
+            src="./img/ethan-no-background.png"
+            alt=""
+          />
+        </div>
+        <div class="bg-dark w-7/12 mx-auto flex justify-center">
+          <h3 class="font-open font-bold text-white text-2xl p-2">
+            CONTACT ME
+          </h3>
+        </div>
+        <div class="w-7/12 mx-auto pt-5">
+          <span
+            ><iconify-icon
+              icon="fa6-solid:location-dot"
+              style="color: #182135"
+            ></iconify-icon
+          ></span>
+          <span>214 Pine Ridge Rd, Aylett, VA 2309</span>
+        </div>
+        <div class="w-7/12 mx-auto pt-5">
+          <span
+            ><iconify-icon
+              icon="fluent:mail-16-filled"
+              style="color: #182135"
+            ></iconify-icon
+          ></span>
+          <span>ethan.michael.letourneau @gmail.com</span>
+        </div>
+        <div class="w-7/12 mx-auto pt-5">
+          <span
+            ><iconify-icon
+              inline
+              icon="ic:baseline-computer"
+              style="color: #182135"
+            ></iconify-icon
+          ></span>
+          <a href="https://www.ethanlet.com/">www.ethanlet.com</a>
+        </div>
+        <div class="bg-dark w-7/12 mt-10 mx-auto flex justify-center">
+          <h3 class="font-open font-bold text-white text-2xl p-2">EDUCATION</h3>
+        </div>
+        <div class="w-7/12 mt-10 mx-auto">
+          <h4 class="font-bold text-xl">MS Information Technology</h4>
+          <h5 class="text-lg">Southern New Hampshire University</h5>
+          <p class="text-neutral-600">2020-2022</p>
+        </div>
+        <div class="w-7/12 mt-10 mx-auto">
+          <h4 class="font-bold text-xl">MBA Management</h4>
+          <h5 class="text-lg">Radford University</h5>
+          <p class="text-neutral-600">2015-2020</p>
+        </div>
+        <div class="bg-dark w-7/12 mt-10 mx-auto flex justify-center">
+          <h3 class="font-open font-bold text-white text-2xl p-2">SKILLS</h3>
+        </div>
+
+        <div class="w-7/12 mx-auto pt-8 grid grid-cols-2 items-center">
+          <div class="">HTML5</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">CSS3</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">Bootstrap</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">Figma</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">JavaScript</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">React</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">MongoDB</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 65%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">Node.js</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 50%"></div>
+          </div>
+        </div>
+        <div class="w-7/12 mx-auto pt-3 grid grid-cols-2 items-center">
+          <div class="">Python</div>
+          <div class="w-full rounded-full h-2.5 bg-bar">
+            <div class="bg-dark h-2.5 rounded-full" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-8 col-span-12 pl-10">
+        <h1 class="font-open font-bold text-6xl pb-3 pt-14">Ethan</h1>
+        <h1 class="font-open text-5xl pb-3">Letourneau</h1>
+        <h2 class="font-open font-thin text-2xl pb-8">Web Developer</h2>
+
+        <div class="bg-dark w-10/12">
+          <h3 class="font-open font-bold text-white text-2xl p-2">
+            WORK EXPERIENCE
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 mt-8 w-10/12">
+          <div class="font-lato">
+            <div class="flex justify-between">
+              <h4 class="text-xl">Fulfillment Expert</h4>
+              <span>2021 - PRESENT</span>
+            </div>
+            <p class="font-bold text-xl">Target | Mechanicsville, VA</p>
+            <ul class="pl-3 w-9/12 text-neutral-600">
+              <li class="pt-2">
+                • Worked in a dynamic environment that required flexibility and
+                improvisation
+              </li>
+              <li>
+                • Interpreted sales information and prioritized tasks based on
+                data
+              </li>
+              <li>
+                • Utilized technology to report sales information, submit
+                problem requests and log activities
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-8 w-10/12">
+          <div class="font-lato">
+            <div class="flex justify-between">
+              <h4 class="text-xl">Shopper</h4>
+              <span>2019 - 2021</span>
+            </div>
+            <p class="font-bold text-xl">SHIPT | Richmond, VA</p>
+            <ul class="pl-3 w-9/12 text-neutral-600">
+              <li class="pt-2">
+                • Communicated with customers to coordinate convenient delivery
+                times and methods in the early stages of the COVID-19 pandemic.
+              </li>
+              <li>
+                • Practiced discipline and flexibility in setting a schedule and
+                leaving extra time for unforeseen circumstances.
+              </li>
+              <li>
+                • Engaged in problem-solving to provide customers alternatives
+                to out- of-stock products
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-8 w-10/12">
+          <div class="font-lato">
+            <div class="flex justify-between">
+              <h4 class="text-xl">Lead Specialist</h4>
+              <span>2019 - 2019</span>
+            </div>
+            <p class="font-bold text-xl">Camp Starfish | Rindge, NH</p>
+            <ul class="pl-3 w-9/12 text-neutral-600">
+              <li class="pt-2">
+                • Fostered the success and growth of children with emotional,
+                behavioral and learning problems by providing individualized
+                attention as part of structured, nurturing and fun group
+                programs
+              </li>
+              <li>
+                • Was responsible for nightly check-ins with staff, and
+                oversight of bunk structure.
+              </li>
+              <li>
+                • Worked with Group Specialists to provide support and structure
+                to the activity group as campers participate in different
+                program areas
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-8 w-10/12">
+          <div class="font-lato">
+            <div class="flex justify-between">
+              <h4 class="text-xl">Server and Event Worker</h4>
+              <span>2016 - 2019</span>
+            </div>
+            <p class="font-bold text-xl">
+              Jefferson Lakeside Country Club | Richmond, VA
+            </p>
+            <ul class="pl-3 w-9/12 text-neutral-600">
+              <li class="pt-2">
+                • Anticipated and handled guest’s needs and requests in a fine
+                dining environment
+              </li>
+              <li>
+                • Collaborated with a team to maximize guest experience at
+                weddings and other high-dollar events
+              </li>
+              <li>
+                • Utilized a personal system to organize customers' orders and
+                provide excellent service in a fast-paced workplace
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="w-screen text-dark visible md:hidden pb-10 bg-light">
+        <section class="bg-light pt-5">
+            <img
+            class="rounded-full border-[12px] border-white w-[100px] mx-auto my-auto"
+            src="./img/ethan-no-background.png"
+            alt=""
+            />
+            <div class="mx-auto grid justify-center pt-5" >
+                <h1 class="font-open text-3xl pb-3"><span class="font-bold">Ethan</span>  Letourneau</h1>
+                <h2 class="font-open font-thin text-2xl pb-8">Web Developer</h2>
+            </div>
+        </section>
+        <section class="bg-light pl-3 pr-3">
+            <h3 class="font-open font-bold text-white text-2xl p-2 bg-dark flex justify-center">
+                CONTACT ME
+            </h3>
+            <div class="p-3">
+                <span>
+                    <iconify-icon
+                        icon="fa6-solid:location-dot"
+                        style="color: #182135"
+                    >
+                    </iconify-icon>
+                </span>
+                <span>214 Pine Ridge Rd, Aylett, VA 2309</span>
+            </div>
+            <div class="p-3">
+                <span>
+                    <iconify-icon
+                        icon="fluent:mail-16-filled"
+                        style="color: #182135">
+                    </iconify-icon>
+                </span>
+                <span>ethan.michael.letourneau @gmail.com</span>
+            </div>
+            <div class="p-3">
+                <span>
+                    <iconify-icon
+                        icon="ic:baseline-computer"
+                        style="color: #182135">
+                    </iconify-icon>
+                </span>
+                <a href="https://www.ethanlet.com/">www.ethanlet.com</a>
+            </div>
+        </section>
+        <section class="bg-light pl-3 pr-3 pt-5">
+            <h3 class="font-open font-bold text-white text-2xl p-2 bg-dark flex justify-center">
+                EDUCATION
+            </h3>
+            <div class="mt-5 mx-5">
+                <h4 class="font-bold text-xl">MS Information Technology</h4>
+                <h5 class="text-lg">Southern New Hampshire University</h5>
+                <p class="text-neutral-600">2020-2022</p>
+            </div>
+            <div class="mt-5 mx-5">
+                <h4 class="font-bold text-xl">MBA Management</h4>
+                <h5 class="text-lg">Radford University</h5>
+                <p class="text-neutral-600">2015-2020</p>
+            </div>
+        </section>
+        <section class="bg-light pl-3 pr-3 pt-5">
+            <h3 class="font-open font-bold text-white text-2xl p-2 bg-dark flex justify-center">
+                SKILLS
+            </h3>
+        </section>
+        <section class="bg-light pl-6 pr-6 pt-5">
+            <div class="mx-auto grid grid-cols-2 items-center">
+                <div class="">HTML5</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center pt-2">
+                <div class="">CSS3</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">Bootstrap</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">Figma</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">JavaScript</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">React</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">MongoDB</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 65%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">Node.js</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="mx-auto grid grid-cols-2 items-center   pt-2">
+                <div class="">Python</div>
+                <div class="w-full rounded-full h-2.5 bg-bar">
+                    <div class="bg-dark h-2.5 rounded-full" style="width: 50%"></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light pl-3 pr-3 pt-5 font-lato">
+            <h3 class="font-open font-bold text-white text-2xl p-2 bg-dark flex justify-center">
+                WORK EXPERIENCE
+            </h3>
+            <div class="pt-8">
+                <div class="flex justify-between">
+                    <h4 class="text-xl">Fulfillment Expert</h4>
+                    <span class="text-neutral-600">2021 - PRESENT</span>
+                </div>
+                <p class="font-bold text-xl">Target | Mechanicsville, VA</p>
+                <ul class="text-neutral-600 text-sm">
+                    <li class="pt-2">
+                      • Worked in a dynamic environment that required flexibility and
+                      improvisation
+                    </li>
+                    <li class="pt-2">
+                      • Interpreted sales information and prioritized tasks based on
+                      data
+                    </li>
+                    <li class="pt-2"a>
+                      • Utilized technology to report sales information, submit
+                      problem requests and log activities
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-8">
+                <div class="flex justify-between pt-5">
+                    <h4 class="text-xl">Shopper</h4>
+                    <span class="text-neutral-600">2019 - 2021</span>
+                </div>
+                <p class="font-bold text-xl">SHIPT | Richmond, VA</p>
+                <ul class="text-neutral-600 text-sm">
+                    <li class="pt-2">
+                      • Communicated with customers to coordinate convenient delivery
+                      times and methods in the early stages of the COVID-19 pandemic.
+                    </li>
+                    <li class="pt-2">
+                      • Practiced discipline and flexibility in setting a schedule and
+                      leaving extra time for unforeseen circumstances.
+                    </li>
+                    <li class="pt-2"a>
+                      • Engaged in problem-solving to provide customers alternatives
+                      to out- of-stock products
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-8">
+                <div class="flex justify-between pt-5">
+                    <h4 class="text-xl">Lead Specialist</h4>
+                    <span class="text-neutral-600">2019 - 2019</span>
+                </div>
+                <p class="font-bold text-xl">Camp Starfish | Rindge, NH</p>
+                <ul class="text-neutral-600 text-sm">
+                    <li class="pt-2">
+                      • Fostered the success and growth of children with emotional,
+                      behavioral and learning problems by providing individualized
+                      attention as part of structured, nurturing and fun group
+                      programs
+                    </li>
+                    <li class="pt-2">
+                      • Was responsible for nightly check-ins with staff, and
+                      oversight of bunk structure.
+                    </li>
+                    <li class="pt-2"a>
+                      • Worked with Group Specialists to provide support and structure
+                      to the activity group as campers participate in different
+                      program areas
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-8">
+                <div class="flex justify-between pt-5">
+                    <h4 class="text-xl">Server and Event Worker</h4>
+                    <span class="text-neutral-600">2016 - 2019</span>
+                </div>
+                <p class="font-bold text-xl">Jefferson Lakeside Country Club | Richmond, VA</p>
+                <ul class="text-neutral-600 text-sm">
+                    <li class="pt-2">
+                      • Anticipated and handled guest’s needs and requests in a fine
+                      dining environment
+                    </li>
+                    <li class="pt-2">
+                      • Collaborated with a team to maximize guest experience at
+                      weddings and other high-dollar events
+                    </li>
+                    <li class="pt-2"a>
+                      • Utilized a personal system to organize customers' orders and
+                      provide excellent service in a fast-paced workplace
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
